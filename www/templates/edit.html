@@ -1,0 +1,28 @@
+<ion-view view-title="User">
+	<ion-content>
+		<div class="list card">
+			<div class="item item-input item-stacked-label">
+				<span class="input-label">Nome</span>
+				<input type="text" ng-model="user.name" focus-me/>
+			</div>
+			<div class="item item-input item-stacked-label">
+				<span class="input-label">Idade</span>
+				<input type="text" ng-model="user.age"/>
+			</div>
+			<div class="item item-input item-select">
+				<span class="input-label">Gênero</span>
+			  	<select type="text" ng-model="user.gender">
+					<option value="man" selected="">Male</option>
+					<option value="woman">Female</option>
+				</select>
+			</div>
+			<div class="item item-input item-stacked-label">
+				<span class="input-label">Nacionalidade</span>
+				<input type="text" ng-model="user.nationality"/>
+			</div>
+			<div class="padding">
+				<button class="button button-block button-positive" ng-click="save()">Salvar</button>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
